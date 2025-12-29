@@ -27,7 +27,7 @@
 
 <!-- ================= HERO CHINA ================= -->
 <section id="china" class="relative h-[300px] overflow-hidden">
-  <img src="assets/images/china-hero.jpg"
+  <img src="https://i.pinimg.com/1200x/af/ce/ac/afceac51fc35df356315d1b872797acb.jpg"
        class="absolute inset-0 w-full h-full object-cover">
   <div class="absolute inset-0 bg-black/45"></div>
   <div class="absolute inset-0 flex items-center justify-center">
