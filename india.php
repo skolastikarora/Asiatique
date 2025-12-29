@@ -27,7 +27,7 @@
 
 <!-- ================= HERO CHINA ================= -->
 <section id="china" class="relative h-[300px] overflow-hidden">
-  <img src="assets/images/china-hero.jpg"
+  <img src="https://i.pinimg.com/736x/42/ad/86/42ad869d939d8da7038de78a0aee21c7.jpg"
        class="absolute inset-0 w-full h-full object-cover">
   <div class="absolute inset-0 bg-black/45"></div>
   <div class="absolute inset-0 flex items-center justify-center">
@@ -68,7 +68,7 @@
     </a>
   </div>
 
- <img src="assets/images/ancient_china.png">
+ <img src="assets/images/ancient_india.png">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     A period defined by flowing Hanfu silhouettes, where clothing emphasized
@@ -99,7 +99,7 @@
     </a>
   </div>
 
-  <img src="assets/images/modern_china.png" class="mb-4">
+  <img src="assets/images/modern_india.png" class="mb-4">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     Modern Chinese fashion represents a fusion of heritage and contemporary
@@ -130,7 +130,7 @@
     </a>
   </div>
 
-  <img src="assets/images/dynastic_china.png" class="mb-4">
+  <img src="assets/images/dynastic_india.png" class="mb-4">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     During the Ming and Qing Dynasties, clothing became more structured and

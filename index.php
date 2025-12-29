@@ -136,10 +136,8 @@
           <div class="absolute top-20 left-20 max-w-xl text-white">
             <h2 class="font-imperial md:text-9xl text-white-900 whitespace-nowrap drop-shadow-sm">China</h2>
             <p class="text-justify">
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
+              China’s traditional clothing emphasizes harmony, symbolism, and refined craftsmanship. 
+              From the flowing elegance of Hanfu to the structured styles of the Qing Dynasty, Chinese attire reflects social hierarchy and cultural values through intricate embroidery and meaningful colors such as red, gold, and deep blue.
             </p>
           </div>
 
@@ -153,17 +151,16 @@
 
         <!-- THAILAND -->
         <div class="min-w-full relative h-full">
-          <img src="thailnd.jpg"
+          <img src="assets/images/hero_thailand.png"
                class="w-full h-full object-cover object-[center_27%]">
           <div class="absolute inset-0 bg-black/30"></div>
 
           <div class="absolute top-20 left-20 max-w-xl text-white">
             <h2 class="font-imperial md:text-9xl text-white-900 whitespace-nowrap drop-shadow-sm">Thailand</h2>
             <p class="text-justify">
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
+              Thailand’s traditional clothing showcases a graceful blend of royal elegance and regional identity. 
+              From the refined draping of the Chut Thai Chakkri worn in historical palaces to the simple yet intricate Pha Sin found in northern communities, Thai attire reflects social status, cultural harmony, and spiritual values. 
+              Gold, pink, and jewel-toned fabrics remain signature choices, symbolizing prosperity, femininity, and the country’s deep connection to ceremonial traditions.
             </p>
           </div>
 
@@ -177,17 +174,16 @@
 
         <!-- INDIA -->
         <div class="min-w-full relative h-full">
-          <img src="india.jpg"
+          <img src="https://i.pinimg.com/1200x/ba/6d/fb/ba6dfbc582fc14e8930028e5691a211e.jpg"
                class="w-full h-full object-cover object-[center_27%]">
           <div class="absolute inset-0 bg-black/30"></div>
 
           <div class="absolute top-20 left-20 max-w-xl text-white">
             <h2 class="font-imperial md:text-9xl text-white-900 whitespace-nowrap drop-shadow-sm">India</h2>
             <p class="text-justify">
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
-              China’s traditional clothing spans millennia and reflects deep cultural meaning.
+              India’s traditional clothing is a vibrant tapestry of colors, craftsmanship, and centuries-old symbolism. 
+              From the endlessly versatile draping of the sari worn across diverse regions to the regal structure of the sherwani seen in courts and celebrations, Indian attire embodies spirituality, artistry, and regional heritage. 
+              Bright hues like red, saffron, and emerald dominate traditional garments, representing purity, power, and auspicious beginnings that remain central to Indian culture.
             </p>
           </div>
 
@@ -242,8 +238,9 @@
 
             <div class="max-w-5xl mx-auto text-center space-y-6">
                 <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-medium">
-                    Kami adalah tim profesional dengan pengalaman lebih dari 10 tahun dalam penyelenggaraan acara. 
-                    Menciptakan emosi, memikirkan setiap sentuhan, memastikan eksekusi yang sempurna.
+                    Our website is dedicated to exploring the rich diversity of traditional clothing across Asia. 
+                    We aim to provide clear, well-researched, and visually engaging information about the ancient, royal, and modern garments of China, Thailand, and India. 
+                    Through this platform, we hope to help learners, students, and culture enthusiasts understand the history, symbolism, and evolution of traditional attire in a simple and accessible way.
                 </p>
             </div>
         </div>
@@ -251,7 +248,7 @@
         <div class="max-w-[95%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1547414375-9b2f63f58694?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/1200x/57/83/4f/57834f5432765bec8454c06aaf82d5cc.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
                         China
@@ -260,7 +257,7 @@
             </div>
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1598935898628-98442d7658c1?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/1200x/14/3f/e0/143fe04f2df742bd1344262ce2d5c684.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
                         Thailand
@@ -269,7 +266,7 @@
             </div>
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/736x/e6/db/22/e6db22d8dc84cd25b5977292bc5ac2a0.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
                         India
@@ -278,7 +275,7 @@
             </div>
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/1200x/47/55/ca/4755ca0523caf299505ae160c2a2ca8b.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
                         Japan
@@ -287,7 +284,7 @@
             </div>
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1538669747201-923f14545d5a?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/736x/4c/b6/37/4cb637ac8908e9015ead4b2f225678d1.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
                         Korea
@@ -296,7 +293,7 @@
             </div>
 
             <div class="relative col-span-2 h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1528181304800-259b08848526?q=80&w=1200&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://www.firsty.app/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F320520%2F1000x667%2F007bfca9f5%2Fthailand.jpg%3Fquality%3D100&w=3840&q=75" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-5xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300 text-center">
                         Southeast Asia
@@ -305,10 +302,10 @@
             </div>
 
             <div class="relative h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1535139262971-c51845709a48?q=80&w=800&auto=format&fit=crop" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/736x/dc/51/be/dc51bef4776669d4bad9edfb56ad14f5.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300">
-                        Asia
+                        Indonesia
                     </span>
                 </div>
             </div> 
@@ -331,9 +328,8 @@
 
         <div class="flex-1">
           <p class="text-gray-700 leading-relaxed text-justify">
-            The platform provides visually structured content that allows users
-            to explore fashion evolution through eras, combining imagery,
-            concise explanations, and cultural narratives.
+            The platform showcases traditional clothing from across Asia, highlighting garments worn in different historical eras. 
+            Each piece is presented as part of a broader story of fashion evolution and cultural identity.
           </p>
 
           <div class="mt-6 h-[2px] bg-[#c9a227]/40"></div>
@@ -348,9 +344,8 @@
 
         <div class="flex-1">
           <p class="text-gray-700 leading-relaxed text-justify">
-            Users can navigate content intuitively through categorized sections
-            and interactive elements that enhance understanding of cultural
-            identity in traditional clothing.
+            Clothing is carefully organized by country, era, and garment type to create a clear and intuitive browsing experience. 
+            This structure allows users to easily compare styles, silhouettes, and cultural influences.
           </p>
 
           <div class="mt-6 h-[2px] bg-[#c9a227]/40"></div>
@@ -365,9 +360,8 @@
 
         <div class="flex-1">
           <p class="text-gray-700 leading-relaxed text-justify">
-            The visual-first design approach helps users connect historical
-            context with modern interpretations, creating an engaging cultural
-            exploration experience.
+            By focusing on garments rather than artifacts alone, the platform emphasizes clothing as a living form of heritage. 
+            Historical designs are connected with modern interpretations to inspire contemporary fashion appreciation.
           </p>
 
           <div class="mt-6 h-[2px] bg-[#c9a227]/40"></div>
@@ -379,7 +373,7 @@
     <!-- RIGHT : IMAGE -->
     <div class="relative">
       <img
-        src="https://images.unsplash.com/photo-1520975922284-9bcd6cce35a8"
+        src="https://i.pinimg.com/736x/c5/07/83/c507830fbfee1c0806d390611c530a10.jpg"
         alt="Feature Image"
         class="w-full h-[520px] object-cover rounded-[28px]"
       >
@@ -411,9 +405,8 @@
     </div>
 
     <p class="max-w-3xl mx-auto text-sm leading-relaxed text-gray-500 mb-16 font-medium">
-      Asiatique is a cultural information platform dedicated to exploring traditional
-      clothing across Asia. The content of this site is intended for educational purposes
-      and cultural appreciation.
+      Asiatique is a cultural information platform dedicated to exploring traditional clothing across Asia, 
+      presented for educational and cultural appreciation.
     </p>
 
     <div class="mb-6">
