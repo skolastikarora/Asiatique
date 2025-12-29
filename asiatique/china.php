@@ -159,7 +159,7 @@
 
     <!-- ITEM 1 -->
     <div class="bg-white rounded-xl overflow-hidden shadow-sm">
-      <img src="assets/images/catalog1.jpg"
+      <img src="https://i.pinimg.com/1200x/4e/86/2f/4e862fc0d329c794a389ef677814a34b.jpg"
            class="w-full h-[200px] object-cover"
            alt="Qing Robe">
 
@@ -197,7 +197,7 @@
           supreme authority and cosmic balance through its intricate motifs.
         </p>
 
-        <a href="https://mnk.pl/en/photo-galleries/the-collection-of-chinese-clothing-from-the-qing-dynasty"
+        <a href="https://www.sothebys.com/en/articles/dragon-robe-decoded"
            target="_blank"
            class="text-sm text-[#8b1d1d] underline">
           Read more
@@ -221,7 +221,7 @@
           functional design, influencing later developments of the Qipao.
         </p>
 
-        <a href="https://mnk.pl/en/photo-galleries/the-collection-of-chinese-clothing-from-the-qing-dynasty"
+        <a href="https://exhibits.library.cornell.edu/chinese-traditional-dress/feature/manchu-style"
            target="_blank"
            class="text-sm text-[#8b1d1d] underline">
           Read more

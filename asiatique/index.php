@@ -169,7 +169,7 @@
 
       <!-- INDIA -->
       <div class="min-w-full relative">
-        <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6"
+        <img src="https://i.pinimg.com/1200x/ba/6d/fb/ba6dfbc582fc14e8930028e5691a211e.jpg"
              class="w-full h-[520px] object-cover">
         <div class="absolute inset-0 bg-black/30"></div>
 

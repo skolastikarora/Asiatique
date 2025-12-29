@@ -68,7 +68,7 @@
     </a>
   </div>
 
- <img src="assets/images/ancient_china.png">
+ <img src="assets/images/ancient_thailand.png">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     A period defined by flowing Hanfu silhouettes, where clothing emphasized
@@ -99,7 +99,7 @@
     </a>
   </div>
 
-  <img src="assets/images/modern_china.png" class="mb-4">
+  <img src="assets/images/modern_thailand.png" class="mb-4">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     Modern Chinese fashion represents a fusion of heritage and contemporary
@@ -130,7 +130,7 @@
     </a>
   </div>
 
-  <img src="assets/images/dynastic_china.png" class="mb-4">
+  <img src="assets/images/dynastic_thailand.png" class="mb-4">
 
   <p class="text-[13px] leading-relaxed text-gray-700 text-justify">
     During the Ming and Qing Dynasties, clothing became more structured and
