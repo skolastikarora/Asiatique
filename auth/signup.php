@@ -72,7 +72,7 @@ body {
 
     <p class="text-sm text-center mt-6">
       Already have an account?
-      <a href="login.php" class="underline">Sign In</a>
+      <a href="login.php" class="underline">Log In</a>
     </p>
   </div>
 
