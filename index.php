@@ -164,37 +164,64 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
   </div>
 </section>
 
-<section id="about" class="py-24 bg-[#f5f2ee]">
-    <div class="container mx-auto px-6 text-center mb-16">
-        <h2 class="font-imperial text-7xl text-[#4F6815] drop-shadow-sm mb-6">About Us</h2>
-        <p class="max-w-2xl mx-auto text-gray-600 text-lg leading-relaxed">
-            Our website is dedicated to exploring the rich diversity of traditional clothing across Asia.
-        </p>
+
+<section id="about" class="relative w-full py-24 bg-[#f5f2ee] overflow-hidden">
+    <div class="relative z-10 container mx-auto px-4 mb-12">
+        <div class="max-w-4xl mx-auto mb-6">
+            <div class="flex items-center gap-6">
+                <div class="flex-1 h-[2px] bg-gradient-to-r from-transparent to-gray-400"></div>
+                <h2 class="font-imperial text-7xl md:text-9xl text-[#4F6815] whitespace-nowrap drop-shadow-sm">About Us</h2>
+                <div class="flex-1 h-[1px] bg-gradient-to-l from-transparent to-gray-400"></div>
+            </div>
+        </div>
+        <div class="max-w-5xl mx-auto text-center space-y-6">
+            <p class="text-gray-600 text-sm md:text-lg leading-relaxed font-medium">
+                Our website is dedicated to exploring the rich diversity of traditional clothing across Asia.
+            </p>
+        </div>
     </div>
 
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-4">
-        <a href="country.php?slug=china" class="relative h-64 rounded-xl overflow-hidden group cursor-pointer block">
+    <div class="max-w-[95%] mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
+        <a href="country.php?slug=china" class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer block">
             <img src="https://i.pinimg.com/1200x/57/83/4f/57834f5432765bec8454c06aaf82d5cc.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
                 <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">China</span>
             </div>
         </a>
-        <a href="country.php?slug=thailand" class="relative h-64 rounded-xl overflow-hidden group cursor-pointer block">
+        <a href="country.php?slug=thailand" class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer block">
             <img src="https://i.pinimg.com/1200x/14/3f/e0/143fe04f2df742bd1344262ce2d5c684.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
                 <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">Thailand</span>
             </div>
         </a>
-        <a href="country.php?slug=india" class="relative h-64 rounded-xl overflow-hidden group cursor-pointer block">
+        <a href="country.php?slug=india" class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer block">
             <img src="https://i.pinimg.com/736x/e6/db/22/e6db22d8dc84cd25b5977292bc5ac2a0.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
                 <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">India</span>
             </div>
         </a>
-        <div class="relative h-64 col-span-2 md:col-span-1 md:row-span-1 rounded-xl overflow-hidden group">
+        <div class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer">
+            <img src="https://i.pinimg.com/1200x/47/55/ca/4755ca0523caf299505ae160c2a2ca8b.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
+                <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">Japan</span>
+            </div>
+        </div>
+        <div class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer">
+            <img src="https://i.pinimg.com/736x/4c/b6/37/4cb637ac8908e9015ead4b2f225678d1.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
+                <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">Korea</span>
+            </div>
+        </div>
+        <div class="relative h-64 col-span-2 rounded-xl overflow-hidden group shadow-md cursor-pointer">
             <img src="https://i.pinimg.com/1200x/21/33/ab/2133abd1703314b77d479772d9780feb.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
-            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/60 transition flex items-center justify-center">
-                <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition">Asia</span>
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
+                <span class="text-white text-6xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">Asia</span>
+            </div>
+        </div>
+        <div class="relative h-64 rounded-xl overflow-hidden group shadow-md cursor-pointer">
+            <img src="https://i.pinimg.com/736x/dc/51/be/dc51bef4776669d4bad9edfb56ad14f5.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition flex items-center justify-center">
+                <span class="text-white text-4xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0">Indonesia</span>
             </div>
         </div>
     </div>
@@ -206,23 +233,26 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">01</span>
         <div>
-           <h3 class="text-xl font-bold mb-2">Historical Era</h3>
+           <h3 class="text-xl font-bold mb-2 text-[#6E1203]">Historical Era</h3>
            <p class="text-gray-600 leading-relaxed">The platform showcases traditional clothing from across Asia, highlighting garments worn in different historical eras.</p>
-        </div>
+            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+          </div>
       </div>
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">02</span>
         <div>
-           <h3 class="text-xl font-bold mb-2">Curated Collection</h3>
+           <h3 class="text-xl font-bold mb-2 text-[#6E1203]">Curated Collection</h3>
            <p class="text-gray-600 leading-relaxed">Clothing is carefully organized by country, era, and garment type to create a clear browsing experience.</p>
-        </div>
+            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+          </div>
       </div>
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">03</span>
         <div>
-           <h3 class="text-xl font-bold mb-2">Living Heritage</h3>
+           <h3 class="text-xl font-bold mb-2 ">Living Heritage</h3>
            <p class="text-gray-600 leading-relaxed">We focus on garments not just as artifacts, but as a living form of heritage that tells the story of its people.</p>
-        </div>
+            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+          </div>
       </div>
     </div>
     <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
