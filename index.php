@@ -119,7 +119,7 @@
 <!-- SPACER HEADER -->
 <div class="h-24"></div>
 
-<!-- ================= HERO ================= -->
+<!-- ================= HOME ================= -->
 <section id="home" class="bg-[#f5f2ee] pt-4">
   <div class="w-full px-6">
     <div class="relative h-[85vh] rounded-[32px] overflow-hidden">
@@ -152,7 +152,7 @@
         <!-- THAILAND -->
         <div class="min-w-full relative h-full">
           <img src="assets/images/hero_thailand.png"
-               class="w-full h-full object-cover object-[center_27%]">
+               class="w-full h-full object-cover object-[center_25%]">
           <div class="absolute inset-0 bg-black/30"></div>
 
           <div class="absolute top-20 left-20 max-w-xl text-white">
@@ -175,7 +175,7 @@
         <!-- INDIA -->
         <div class="min-w-full relative h-full">
           <img src="https://i.pinimg.com/1200x/ba/6d/fb/ba6dfbc582fc14e8930028e5691a211e.jpg"
-               class="w-full h-full object-cover object-[center_27%]">
+               class="w-full h-full object-cover object-[center_35%]">
           <div class="absolute inset-0 bg-black/30"></div>
 
           <div class="absolute top-20 left-20 max-w-xl text-white">
@@ -228,7 +228,7 @@
             
             <div class="max-w-4xl mx-auto mb-6">
                 <div class="flex items-center gap-6">
-                    <div class="flex-1 h-[1px] bg-gradient-to-r from-transparent to-gray-400"></div>
+                    <div class="flex-1 h-[2px] bg-gradient-to-r from-transparent to-gray-400"></div>
                     <h2 class="font-imperial text-7xl md:text-9xl text-[#4F6815] whitespace-nowrap drop-shadow-sm">
                         About Us
                     </h2>
@@ -293,10 +293,10 @@
             </div>
 
             <div class="relative col-span-2 h-64 rounded-xl overflow-hidden group shadow-md border border-gray-200 cursor-pointer">
-                <img src="https://www.firsty.app/_next/image?url=https%3A%2F%2Fa.storyblok.com%2Ff%2F320520%2F1000x667%2F007bfca9f5%2Fthailand.jpg%3Fquality%3D100&w=3840&q=75" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
+                <img src="https://i.pinimg.com/1200x/21/33/ab/2133abd1703314b77d479772d9780feb.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/0 group-hover:bg-black/60 transition duration-300 flex items-center justify-center">
                     <span class="text-white text-5xl font-imperial opacity-0 group-hover:opacity-100 transition transform translate-y-4 group-hover:translate-y-0 duration-300 text-center">
-                        Southeast Asia
+                        Asia
                     </span>
                 </div>
             </div>
@@ -373,9 +373,9 @@
     <!-- RIGHT : IMAGE -->
     <div class="relative">
       <img
-        src="https://i.pinimg.com/736x/c5/07/83/c507830fbfee1c0806d390611c530a10.jpg"
+        src="https://i.pinimg.com/1200x/12/85/f9/1285f9ad2c74b34b5c441893cc64471d.jpg"
         alt="Feature Image"
-        class="w-full h-[520px] object-cover rounded-[28px]"
+        class="w-full h-[550px] object-cover rounded-[28px] object-[center_27%]"
       >
     </div>
 
