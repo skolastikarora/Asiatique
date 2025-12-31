@@ -146,7 +146,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
 
     <section class="min-h-[80vh] flex flex-col justify-center items-center px-6 py-20">
         <div class="text-center mb-16">
-            <h1 class="font-imperial text-6xl md:text-8xl text-gray-800 mb-4">Welcome to Asiatique</h1>
+            <h1 class="font-imperial text-6xl md:text-8xl text-[#6E1203] mb-4">Welcome to Asiatique</h1>
             <p class="text-xl text-gray-500 tracking-wide">Explore the timeless beauty of Asian fashion & culture.</p>
         </div>
 
@@ -245,7 +245,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
                    target="<?= $target; ?>" 
                    rel="noopener noreferrer"
                    class="block w-full py-4 rounded-full bg-theme text-white text-center font-bold uppercase tracking-widest text-sm hover:opacity-90 transition shadow-md hover:shadow-lg">
-                    Circle Shop Now
+                    Shop Now
                 </a>
             </div>
 
@@ -263,7 +263,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
             <div class="w-24 h-[1px] bg-theme"></div>
           </div>
           
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
               <?php if(mysqli_num_rows($catalog) > 0): while ($row = mysqli_fetch_assoc($catalog)): ?>
                   <div class="bg-white rounded-xl overflow-hidden shadow-md group relative h-[400px]">
                       <img src="<?= $row['image']; ?>" class="w-full h-full object-cover transition duration-500 group-hover:scale-110" alt="<?= htmlspecialchars($row['title']); ?>">
