@@ -146,7 +146,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
             </div>
 
             <div class="absolute bottom-12 right-12">
-              <a href="<?= $linkBaru; ?>" class="inline-block bg-white px-8 py-3 rounded-full shadow hover:bg-[#c9a227] hover:text-white transition font-bold text-sm tracking-wide uppercase">
+              <a href="<?= $linkBaru; ?>" class="inline-block bg-white px-8 py-3 rounded-full shadow hover:bg-[#6E1203] hover:text-white transition font-bold text-sm tracking-wide uppercase">
                 Discover more
               </a>
             </div>
@@ -229,35 +229,48 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
 
 <section id="feature" class="py-20 px-6 bg-white">
   <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    
     <div class="space-y-12">
+      
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">01</span>
         <div>
-           <h3 class="text-xl font-bold mb-2 text-[#6E1203]">Historical Era</h3>
+           <h3 class="text-xl font-bold mb-2 text-[#c9a227]">Historical Era</h3>
            <p class="text-gray-600 leading-relaxed">The platform showcases traditional clothing from across Asia, highlighting garments worn in different historical eras.</p>
-            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
-          </div>
+           <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+         </div>
       </div>
+
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">02</span>
         <div>
-           <h3 class="text-xl font-bold mb-2 text-[#6E1203]">Curated Collection</h3>
+           <h3 class="text-xl font-bold mb-2 text-[#c9a227]">Curated Collection</h3>
            <p class="text-gray-600 leading-relaxed">Clothing is carefully organized by country, era, and garment type to create a clear browsing experience.</p>
-            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
-          </div>
+           <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+         </div>
       </div>
+
       <div class="flex gap-6 group">
         <span class="text-8xl text-[#c9a227]/30 font-bold group-hover:text-[#c9a227] transition">03</span>
         <div>
-           <h3 class="text-xl font-bold mb-2 ">Living Heritage</h3>
+           <h3 class="text-xl font-bold mb-2 text-[#c9a227]">Living Heritage</h3>
            <p class="text-gray-600 leading-relaxed">We focus on garments not just as artifacts, but as a living form of heritage that tells the story of its people.</p>
-            <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
-          </div>
+           <div class="mt-6 h-[2px] bg-[#c9a227]/40 w-full group-hover:w-full transition-all duration-500 origin-left"></div>
+         </div>
       </div>
+
+      </div>
+
+    <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl group">
+      <img src="https://i.pinimg.com/1200x/12/85/f9/1285f9ad2c74b34b5c441893cc64471d.jpg" class="w-full h-full object-cover transition duration-700 group-hover:scale-105">
+      
+      <a href="country.php" 
+         class="absolute bottom-8 right-8 inline-flex items-center gap-2 px-8 py-3 bg-[#c9a227] text-white rounded-full font-bold uppercase tracking-wider text-sm shadow-lg hover:bg-[#b08d21] hover:scale-105 transition-all duration-300 z-10">
+          Explore Country
+          <span class="material-symbols-outlined text-lg">arrow_right_alt</span>
+      </a>
     </div>
-    <div class="relative h-[500px] rounded-3xl overflow-hidden shadow-2xl">
-      <img src="https://i.pinimg.com/1200x/12/85/f9/1285f9ad2c74b34b5c441893cc64471d.jpg" class="w-full h-full object-cover">
-    </div>
+
   </div>
 </section>
 
