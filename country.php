@@ -1,7 +1,16 @@
 <?php
 session_start();
 
+// Cek apakah session 'login' ada?
+if (!isset($_SESSION['login']) || $_SESSION['login'] !== true) {
+    // PERBAIKAN: Tambahkan pesan notifikasi saat melempar ke auth/login.php
+    $pesan = "You must login first to see country details!";
+    header("Location: auth/login.php?message=" . urlencode($pesan));
+    exit;
+}
+
 // 1. Koneksi ke Database
+// Sebaiknya pakai config, tapi ini saya biarkan sesuai kode Anda
 $conn = mysqli_connect("localhost", "root", "", "asiatique");
 if (!$conn) { 
     die("Koneksi Database Gagal: " . mysqli_connect_error()); 
@@ -29,7 +38,7 @@ if (!$is_landing_page) {
 
     // Jika negara tidak ditemukan, kembali ke mode landing
     if (!$country) { 
-        header("Location: index.php"); 
+        header("Location: index.php"); // Atau index.php
         exit; 
     }
 
@@ -118,7 +127,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
              mysqli_data_seek($menu_countries, 0); 
              while($c = mysqli_fetch_assoc($menu_countries)): 
            ?>
-             <a href="index.php?slug=<?= $c['slug']; ?>" class="block px-5 py-3 hover:bg-gray-50 text-gray-600 hover-text-theme transition">
+             <a href="country.php?slug=<?= $c['slug']; ?>" class="block px-5 py-3 hover:bg-gray-50 text-gray-600 hover-text-theme transition">
                 <?= $c['name']; ?>
              </a>
            <?php endwhile; endif; ?>
@@ -152,7 +161,7 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto w-full">
             <?php while($row = mysqli_fetch_assoc($all_countries_query)): ?>
-            <a href="index.php?slug=<?= $row['slug']; ?>" class="group block relative overflow-hidden rounded-2xl h-80 shadow-lg">
+            <a href="country.php?slug=<?= $row['slug']; ?>" class="group block relative overflow-hidden rounded-2xl h-80 shadow-lg">
                 <img src="<?= $row['hero_image']; ?>" alt="<?= $row['name']; ?>" class="absolute inset-0 w-full h-full object-cover transition duration-700 group-hover:scale-110">
                 <div class="absolute inset-0 bg-black/30 group-hover:bg-black/50 transition duration-300"></div>
                 <div class="absolute inset-0 flex items-center justify-center">
@@ -288,11 +297,11 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
 
 <footer class="bg-white pt-16 pb-8 border-t border-gray-100">
     <div class="max-w-7xl mx-auto px-6 flex flex-col items-center text-center">
-        <a href="index.php" class="mb-6 opacity-80 hover:opacity-100 transition">
+        <a href="country.php" class="mb-6 opacity-80 hover:opacity-100 transition">
              <img src="assets/images/asiatique_logo.png" alt="Asiatique Logo" class="h-8 grayscale hover:grayscale-0 transition">
         </a>
         <ul class="flex flex-wrap justify-center gap-8 mb-8 text-sm font-semibold text-gray-500 uppercase tracking-wider">
-            <li><a href="index.php" class="hover-text-theme transition">Home</a></li>
+            <li><a href="country.php" class="hover-text-theme transition">Home</a></li>
             <?php if (!$is_landing_page): ?>
                 <li><a href="#eras" class="hover-text-theme transition">Fashion Eras</a></li>
                 <li><a href="#heritage" class="hover-text-theme transition">Cultural Heritage</a></li>
