@@ -1,9 +1,7 @@
 <?php
 session_start();
 
-// ==========================================================
 // 1. KONEKSI DATABASE
-// ==========================================================
 $host = "localhost";
 $user = "root";
 $pass = "";
@@ -12,9 +10,7 @@ $db   = "asiatique";
 $conn = mysqli_connect($host, $user, $pass, $db);
 if (!$conn) { die("Koneksi Gagal: " . mysqli_connect_error()); }
 
-// ==========================================================
 // 2. AMBIL DATA
-// ==========================================================
 $slides = mysqli_query($conn, "SELECT * FROM home_slides ORDER BY display_order ASC");
 $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY name ASC");
 ?>
@@ -113,11 +109,8 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
       <?php if(mysqli_num_rows($slides) > 0): ?>
         <?php while ($row = mysqli_fetch_assoc($slides)) : ?>
           <?php 
-            // === LOGIKA PERBAIKAN LINK ===
-            // Kita ABAIKAN link dari database yang mungkin kotor.
-            // Kita buat link baru berdasarkan JUDUL SLIDE.
             
-            $judul = strtolower($row['title']); // misal: "The Grandeur of China"
+            $judul = strtolower($row['title']); 
             $linkBaru = "#";
 
             if (strpos($judul, 'china') !== false) {
@@ -127,7 +120,6 @@ $menu_countries = mysqli_query($conn, "SELECT name, slug FROM countries ORDER BY
             } elseif (strpos($judul, 'india') !== false) {
                 $linkBaru = "country.php?slug=india";
             } else {
-                // Fallback: coba bersihkan link database
                 $linkBaru = str_replace(['Asiatique/', '/Asiatique/'], '', $row['link_url']);
                 $linkBaru = ltrim($linkBaru, '/');
             }

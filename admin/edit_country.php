@@ -1,31 +1,24 @@
 <?php
 session_start();
-// 1. KONEKSI & AUTH
 $conn = mysqli_connect("localhost", "root", "", "asiatique");
 
-// Cek Login Admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header("Location: ../index.php");
     exit;
 }
 
-// 2. AMBIL ID DARI URL
 $id = $_GET['id'] ?? '';
 if(!$id) { header("Location: dashboard.php"); exit; }
 
-// 3. PROSES SIMPAN DATA (JIKA TOMBOL UPDATE DITEKAN)
 if(isset($_POST['update'])) {
-    // Ambil data dari Form
     $name       = $_POST['name'];
-    // Auto-generate slug baru jika nama berubah
     $slug       = strtolower(trim(preg_replace('/[^A-Za-z0-9-]+/', '-', $name)));
     
     $hero_title = $_POST['hero_title'];
     $hero_image = $_POST['hero_image'];
     $desc       = $_POST['description'];
-    $theme_color= $_POST['theme_color']; // <--- INI PENTING (Dulu ketinggalan)
+    $theme_color= $_POST['theme_color']; 
 
-    // Update Query Lengkap
     $query = "UPDATE countries SET 
               name = ?, 
               slug = ?, 
@@ -37,7 +30,6 @@ if(isset($_POST['update'])) {
 
     $stmt = mysqli_prepare($conn, $query);
     
-    // Bind Parameter: "ssssssi" artinya 6 String, 1 Integer (ID)
     mysqli_stmt_bind_param($stmt, "ssssssi", $name, $slug, $hero_title, $hero_image, $desc, $theme_color, $id);
     
     if(mysqli_stmt_execute($stmt)) {
@@ -47,13 +39,11 @@ if(isset($_POST['update'])) {
     }
 }
 
-// 4. AMBIL DATA LAMA UNTUK DITAMPILKAN DI FORM
 $stmt = mysqli_prepare($conn, "SELECT * FROM countries WHERE id=?");
 mysqli_stmt_bind_param($stmt, "i", $id);
 mysqli_stmt_execute($stmt);
 $data = mysqli_fetch_assoc(mysqli_stmt_get_result($stmt));
 
-// Jika ID tidak ditemukan
 if(!$data) { echo "Data tidak ditemukan."; exit; }
 ?>
 

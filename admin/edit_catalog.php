@@ -9,7 +9,6 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 $id = $_GET['id'] ?? '';
 $data = [];
 
-// AMBIL DATA LAMA
 if ($id) {
     $stmt = mysqli_prepare($conn, "SELECT * FROM cultural_heritage WHERE id=?");
     mysqli_stmt_bind_param($stmt, "i", $id);
@@ -20,20 +19,16 @@ if ($id) {
 
 $countries = mysqli_query($conn, "SELECT id, name FROM countries");
 
-// PROSES UPDATE
 if (isset($_POST['update'])) {
     $country_id = $_POST['country_id'];
     $title      = $_POST['title'];
     $desc       = $_POST['description'];
     $image      = $_POST['image'];
     
-    // Ambil Link baru
     $link       = !empty($_POST['link']) ? $_POST['link'] : '#';
 
-    // QUERY UPDATE: Pastikan kolom 'link=?' ada
     $stmt = mysqli_prepare($conn, "UPDATE cultural_heritage SET country_id=?, title=?, description=?, image=?, link=? WHERE id=?");
     
-    // Bind: issssi (urutan: country_id, title, description, image, link, id)
     mysqli_stmt_bind_param($stmt, "issssi", $country_id, $title, $desc, $image, $link, $id);
     
     if (mysqli_stmt_execute($stmt)) {

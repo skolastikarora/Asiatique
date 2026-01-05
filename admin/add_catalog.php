@@ -16,13 +16,11 @@ if (isset($_POST['submit'])) {
     $desc       = $_POST['description'];
     $image      = $_POST['image'];
     
-    // Ambil Link dari form. Jika kosong, isi dengan '#'
     $link       = !empty($_POST['link']) ? $_POST['link'] : '#'; 
 
-    // QUERY INSERT: Pastikan kolom 'link' ada di sini
+
     $stmt = mysqli_prepare($conn, "INSERT INTO cultural_heritage (country_id, title, description, image, link) VALUES (?, ?, ?, ?, ?)");
     
-    // Bind: i (int), s (string) -> urutan: country_id, title, description, image, link
     mysqli_stmt_bind_param($stmt, "issss", $country_id, $title, $desc, $image, $link);
     
     if (mysqli_stmt_execute($stmt)) {

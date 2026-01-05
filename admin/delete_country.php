@@ -2,7 +2,6 @@
 session_start();
 $conn = mysqli_connect("localhost", "root", "", "asiatique");
 
-// Cek Admin
 if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
     header("Location: ../index.php"); exit;
 }
@@ -10,8 +9,7 @@ if (!isset($_SESSION['role']) || $_SESSION['role'] !== 'admin') {
 $id = $_GET['id'] ?? '';
 
 if ($id) {
-    // Hapus Negara (Data Era & Catalog terkait idealnya dihapus juga, 
-    // tapi ini hapus negaranya saja dulu)
+   
     $stmt = mysqli_prepare($conn, "DELETE FROM countries WHERE id = ?");
     mysqli_stmt_bind_param($stmt, "i", $id);
     

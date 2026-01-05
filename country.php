@@ -3,28 +3,24 @@ session_start();
 
 // Cek apakah session 'login' ada?
 if (!isset($_SESSION['login']) || $_SESSION['login'] !== true) {
-    // PERBAIKAN: Tambahkan pesan notifikasi saat melempar ke auth/login.php
     $pesan = "You must login first to see country details!";
     header("Location: auth/login.php?message=" . urlencode($pesan));
     exit;
 }
 
-// 1. Koneksi ke Database
-// Sebaiknya pakai config, tapi ini saya biarkan sesuai kode Anda
 $conn = mysqli_connect("localhost", "root", "", "asiatique");
 if (!$conn) { 
     die("Koneksi Database Gagal: " . mysqli_connect_error()); 
 }
 
-// 2. Logika Penentuan Halaman (Landing atau Detail)
-$slug = $_GET['slug'] ?? '';
-$is_landing_page = empty($slug); // True jika tidak ada slug
 
-// Variabel untuk menampung data
+$slug = $_GET['slug'] ?? '';
+$is_landing_page = empty($slug); 
+
 $country = null;
 $eras = null;
 $catalog = null;
-$themeColor = '#c9a227'; // Default Gold
+$themeColor = '#c9a227'; 
 
 if (!$is_landing_page) {
     // --- LOGIC HALAMAN DETAIL NEGARA ---
@@ -38,7 +34,7 @@ if (!$is_landing_page) {
 
     // Jika negara tidak ditemukan, kembali ke mode landing
     if (!$country) { 
-        header("Location: index.php"); // Atau index.php
+        header("Location: index.php");
         exit; 
     }
 

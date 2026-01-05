@@ -29,26 +29,21 @@ function uploadImage($fileInfo) {
     }
 }
 
-// Proses Submit
 if (isset($_POST['submit'])) {
     $country_id = $_POST['country_id'];
     $name       = $_POST['era_name'];
     $desc       = $_POST['description'];
     
-    // 1. Gambar Atas (Manual Link)
     $img_top    = $_POST['image_top_url'];
     
-    // 2. Gambar Bawah (Upload File)
     $img_btm    = uploadImage($_FILES['image_bottom_path']); 
     
-    // 3. Link Shop (Ambil dari input, BUKAN dummy "#" lagi)
+    
     $shop       = $_POST['shop_link'];
 
-    // Query INSERT
     $stmt = mysqli_prepare($conn, "INSERT INTO country_eras (country_id, era_name, description, image_top_url, image_bottom_path, shop_link) VALUES (?, ?, ?, ?, ?, ?)");
     
-    // Bind Param: isssss (integer, string, string, string, string, string)
-    mysqli_stmt_bind_param($stmt, "isssss", $country_id, $name, $desc, $img_top, $img_btm, $shop);
+      mysqli_stmt_bind_param($stmt, "isssss", $country_id, $name, $desc, $img_top, $img_btm, $shop);
     
     if (mysqli_stmt_execute($stmt)) { 
         echo "<script>alert('Era berhasil ditambahkan!'); window.location.href='dashboard.php';</script>";

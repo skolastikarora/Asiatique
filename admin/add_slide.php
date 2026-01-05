@@ -13,7 +13,6 @@ if (isset($_POST['submit'])) {
     $link  = $_POST['link_url'];
     $order = $_POST['display_order'];
 
-    // QUERY INSERT (Menambah Data Baru)
     $stmt = mysqli_prepare($conn, "INSERT INTO home_slides (title, description, image, link_url, display_order) VALUES (?, ?, ?, ?, ?)");
     mysqli_stmt_bind_param($stmt, "ssssi", $title, $desc, $image, $link, $order);
     

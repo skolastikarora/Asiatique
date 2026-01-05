@@ -12,7 +12,7 @@ if ($id) {
     $stmt = mysqli_prepare($conn, "DELETE FROM home_slides WHERE id=?");
     mysqli_stmt_bind_param($stmt, "i", $id);
     if(mysqli_stmt_execute($stmt)) {
-        header("Location: dashboard.php"); // Balik langsung kalau sukses
+        header("Location: dashboard.php"); 
     } else {
         echo "Gagal menghapus.";
     }

@@ -10,7 +10,7 @@ if (isset($_POST['submit'])) {
     $hero_title = $_POST['hero_title'];
     $hero_image = $_POST['hero_image'];
     $desc       = $_POST['description'];
-    $color      = $_POST['theme_color']; // AMBIL WARNA
+    $color      = $_POST['theme_color']; 
 
     $stmt = mysqli_prepare($conn, "INSERT INTO countries (name, slug, hero_title, hero_image, description, theme_color) VALUES (?, ?, ?, ?, ?, ?)");
     mysqli_stmt_bind_param($stmt, "ssssss", $name, $slug, $hero_title, $hero_image, $desc, $color);
